@@ -10,10 +10,5 @@ yarn-error.log
 *.ntvs*
 *.njsproj
 *.sln
-/webpack.config.js
 .vscode
-/package.json
-/package-lock.json
-.babelrc
-.editorconfig
 *assets
