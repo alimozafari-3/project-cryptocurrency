@@ -33,7 +33,28 @@
 </template>
 
 <script>
-
+export default {
+ data() {
+  return {
+    search: '',
+  
+  };
+ },
+  computed: {
+    Getdatamarket(){
+    return  this.$store.getters.Getdatamarket
+    }
+  },
+  created() {
+    this.$store.dispatch("dataserverfrom");
+  },
+  watch: {
+    Getdatamarket() {
+      this.$store.dispatch("dataserverfrom");
+    },
+ 
+  },
+};
 </script>
  
  
